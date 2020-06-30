@@ -1,0 +1,13 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the  and  formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the RESERVE_init() hook (in hooks/RESERVE.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="RESERVE-Event-<%%VALUE(id)%%>" class="RESERVE-Event"><%%VALUE(Event)%%></td>
+		<td id="RESERVE-assigned_to-<%%VALUE(id)%%>" class="RESERVE-assigned_to"><%%VALUE(assigned_to)%%></td>
+		<td id="RESERVE-time-<%%VALUE(id)%%>" class="RESERVE-time"><%%VALUE(time)%%></td>
+		<td id="RESERVE-status-<%%VALUE(id)%%>" class="RESERVE-status"><%%VALUE(status)%%></td>
+		<td id="RESERVE-Amount_paid-<%%VALUE(id)%%>" class="RESERVE-Amount_paid"><%%VALUE(Amount_paid)%%></td>
+		<td id="RESERVE-mode-<%%VALUE(id)%%>" class="RESERVE-mode"><%%VALUE(mode)%%></td>

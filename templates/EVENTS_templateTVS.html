@@ -1,0 +1,11 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the  and  formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the EVENTS_init() hook (in hooks/EVENTS.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="EVENTS-teams-<%%VALUE(id)%%>" class="EVENTS-teams"><%%VALUE(teams)%%></td>
+		<td id="EVENTS-date-<%%VALUE(id)%%>" class="EVENTS-date"><%%VALUE(date)%%></td>
+		<td id="EVENTS-endtime-<%%VALUE(id)%%>" class="EVENTS-endtime"><%%VALUE(endtime)%%></td>
+		<td id="EVENTS-seats-<%%VALUE(id)%%>" class="EVENTS-seats text-right"><%%VALUE(seats)%%></td>

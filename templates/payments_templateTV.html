@@ -1,0 +1,11 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the payments_init() hook (in hooks/payments.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="payments-channels-<%%VALUE(id)%%>" class="payments-channels"><%%SELECT%%><%%VALUE(channels)%%><%%ENDSELECT%%></td>
+		<td id="payments-mpesa-<%%VALUE(id)%%>" class="payments-mpesa"><%%SELECT%%><%%VALUE(mpesa)%%><%%ENDSELECT%%></td>
+		<td id="payments-paypal-<%%VALUE(id)%%>" class="payments-paypal"><%%SELECT%%><%%VALUE(paypal)%%><%%ENDSELECT%%></td>
+		<td id="payments-bank-<%%VALUE(id)%%>" class="payments-bank"><%%SELECT%%><%%VALUE(bank)%%><%%ENDSELECT%%></td>
